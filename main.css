@@ -1,0 +1,94 @@
+/* body {
+    background-image: url("image/background2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container {
+    margin: auto 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 0;
+    background-image: url(image/cup.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.object {
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: calc(45% - 100px);
+    bottom: calc(15% - 25px);
+    transition: all 0.5s ease-in-out;
+    background-image: url("image/rock.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contariner-button {
+    width: 25%;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 40%;
+    background-color: #88d9e5;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#addMass {
+    float: left;
+}
+
+#removeMass {
+    float: right;
+    display: none;
+}
+
+p,
+h3 {
+    font-family: "Tajawal", sans-serif;
+} */
+
+#container {
+    width: 30vw;  /* 30% of the viewport width */
+    height: 60vh; /* 60% of the viewport height */
+    background-color: lightblue;
+    position: relative;
+    border: 2px solid #000;
+    top: 0;
+    transition: top 0.3s ease;
+}
+
+.object {
+    width: 0;
+    height: 0;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 15vw); /* Center based on 30vw container */
+    display: none;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+}
